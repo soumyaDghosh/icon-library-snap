@@ -1,0 +1,21 @@
+diff -Naur a/data/org.gnome.design.IconLibrary.desktop.in.in b/data/org.gnome.design.IconLibrary.desktop.in.in
+--- a/data/org.gnome.design.IconLibrary.desktop.in.in	2023-06-07 19:59:43.388421655 +0530
++++ b/data/org.gnome.design.IconLibrary.desktop.in.in	2023-06-07 20:02:39.138753171 +0530
+@@ -8,5 +8,5 @@
+ # Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+ Keywords=Icon;Library;GNOME;GTK;
+ # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+-Icon=@icon@
++Icon=snap.icon-library.@icon@
+ StartupNotify=true
+diff -Naur a/data/org.gnome.design.IconLibrary.metainfo.xml.in.in b/data/org.gnome.design.IconLibrary.metainfo.xml.in.in
+--- a/data/org.gnome.design.IconLibrary.metainfo.xml.in.in	2023-06-07 20:00:16.976102809 +0530
++++ b/data/org.gnome.design.IconLibrary.metainfo.xml.in.in	2023-06-07 20:04:28.102794274 +0530
+@@ -2,6 +2,7 @@
+ <!-- Copyright 2019 Bilal Elmoussaoui <bilal.elmoussaoui@gnome.org> -->
+ <component type="desktop-application">
+   <id>@app-id@</id>
++  <icon type="stock">snap.icon-library.@app-id@</icon>
+   <metadata_license>CC0</metadata_license>
+   <project_license>GPL-3.0+</project_license>
+   <name>Icon Library</name>
