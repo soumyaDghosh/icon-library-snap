@@ -53,7 +53,7 @@ parts:
     override-build: |
       craftctl default
       mkdir -p $CRAFT_PART_INSTALL/meta/gui
-      cp -r $CRAFT_PART_INSTALL/snap/resonance/current/usr/share/icons $CRAFT_PART_INSTALL/meta/gui/
+      cp -r $CRAFT_PART_INSTALL/snap/icon-library/current/usr/share/icons $CRAFT_PART_INSTALL/meta/gui/
       for i in `find $CRAFT_PART_INSTALL/meta/gui/icons -name "*.svg" -o -name "*.png"`; do
         mv $i "`dirname $i`/snap.$CRAFT_PROJECT_NAME.`basename $i`"
       done
