@@ -43,6 +43,7 @@ parts:
       - RUSTUP_HOME: $CRAFT_PART_INSTALL/usr/share/rust
       - CARGO_HOME: $CRAFT_PART_INSTALL/usr/share/rust
       - CARGO_BUILD_JOBS: $CRAFT_PARALLEL_BUILD_COUNT
+      - PATH: $CRAFT_STAGE/usr/bin:$PATH
     meson-parameters:
       - --prefix=/snap/icon-library/current/usr
     override-pull: |
