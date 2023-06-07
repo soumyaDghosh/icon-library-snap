@@ -57,7 +57,7 @@ parts:
       done
     organize: 
       snap/icon-library/current: .
-    parse-info: usr/share/metainfo/org.gnome.design.IconLibrary.metainfo.xml
+    parse-info: [usr/share/metainfo/org.gnome.design.IconLibrary.metainfo.xml]
 apps:
   icon-library:
     command: usr/bin/icon-library
