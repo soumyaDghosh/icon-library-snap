@@ -8,7 +8,7 @@ architectures:
   - build-on: amd64
   - build-on: armhf
   - build-on: arm64
-  
+
 slots:
   icon-library:
     interface: dbus
@@ -39,6 +39,7 @@ parts:
     plugin: meson
     source: https://gitlab.gnome.org/World/design/icon-library.git
     source-tag: '0.0.16'
+    source-depth: 1
     build-environment:
       - RUSTUP_HOME: $CRAFT_STAGE/usr/share/rust
       - CARGO_HOME: $CRAFT_STAGE/usr/share/rust
